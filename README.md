@@ -15,3 +15,8 @@ https://www.2t58.com
 
 https://msdn.sjjzm.com/ itellyou或系统库需要登账号或者关注微信公众号
 
+游戏下载
+
+https://winzerokyo.github.io/ 主机（含switch）和模拟器和pc经典作
+
+https://www.gamer520.com/ 全集，含Steam
