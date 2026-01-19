@@ -1,24 +1,114 @@
-# cn net res
-聚合一些好用的东西
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/shoelace.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/themes/light.css">
 
-免费看电影
+  <style>
+    body {
+      padding: 20px;
+      font-family: sans-serif;
+    }
 
-https://tool.liumingye.cn/video/
+    /* 固定布局，不响应式 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: 420px 420px; /* 两列固定宽度 */
+      gap: 20px;
+    }
 
-免费下歌
+    .site-card {
+      max-width: 420px;
+    }
 
-https://www.eqishare.com/softwaretool/1457.html with https://lxmusic.toside.cn/download
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
 
-https://www.2t58.com
+<body>
 
-下系统
+  <div class="card-grid">
 
-https://msdn.sjjzm.com/ itellyou或系统库需要登账号或者关注微信公众号
+    <!-- 1. 看电影 -->
+    <sl-card class="site-card">
+      <div style="display: flex; gap: 12px;">
+        <sl-avatar image="https://toolb.cn/favicon/tool.liumingye.cn/video/" style="icon"></sl-avatar>
+        <div>
+          <strong>免费看电影</strong><br>
+          <a href="https://tool.liumingye.cn/video/" target="_blank">
+            https://tool.liumingye.cn/video/
+          </a>
+        </div>
+      </div>
+    </sl-card>
 
-游戏下载
+    <!-- 2. 免费下歌 -->
+    <sl-card class="site-card">
+      <div style="display: flex; gap: 12px;">
+        <sl-avatar image="https://toolb.cn/favicon/lxmusic.toside.cn/download" style="icon"></sl-avatar>
+        <div>
+          <strong>免费下歌</strong><br>
+          <a href="https://www.eqishare.com/softwaretool/1457.html" target="_blank">
+            https://www.eqishare.com/softwaretool/1457.html
+          </a><br>
+          <a href="https://lxmusic.toside.cn/download" target="_blank">
+            https://lxmusic.toside.cn/download
+          </a><br>
+          <a href="https://www.2t58.com" target="_blank">
+            https://www.2t58.com
+          </a>
+        </div>
+      </div>
+    </sl-card>
 
-https://winzerokyo.github.io/ 主机（含switch）和模拟器和pc经典作
+    <!-- 3. 下系统 -->
+    <sl-card class="site-card">
+      <div style="display: flex; gap: 12px;">
+        <sl-avatar image="https://toolb.cn/favicon/msdn.sjjzm.com/" style="icon"></sl-avatar>
+        <div>
+          <strong>下系统</strong><br>
+          <a href="https://msdn.sjjzm.com/" target="_blank">
+            https://msdn.sjjzm.com/
+          </a><br>
+          <span style="font-size:12px;opacity:0.7;">
+            itellyou 或 系统库需登录或关注公众号
+          </span>
+        </div>
+      </div>
+    </sl-card>
 
-https://www.gamer520.com/ 全集，含Steam
+    <!-- 4. 主机/模拟器/PC 游戏 -->
+    <sl-card class="site-card">
+      <div style="display: flex; gap: 12px;">
+        <sl-avatar image="https://toolb.cn/favicon/winzerokyo.github.io/" style="icon"></sl-avatar>
+        <div>
+          <strong>主机 / 模拟器 / PC 游戏</strong><br>
+          <a href="https://winzerokyo.github.io/" target="_blank">
+            https://winzerokyo.github.io/
+          </a>
+        </div>
+      </div>
+    </sl-card>
 
-基于这个，思考结构，借鉴博客或资源站结构，生成html
+    <!-- 5. 游戏全集（含 Steam） -->
+    <sl-card class="site-card">
+      <div style="display: flex; gap: 12px;">
+        <sl-avatar image="https://toolb.cn/favicon/www.gamer520.com/" style="icon"></sl-avatar>
+        <div>
+          <strong>游戏下载全集（含 Steam）</strong><br>
+          <a href="https://www.gamer520.com/" target="_blank">
+            https://www.gamer520.com/
+          </a>
+        </div>
+      </div>
+    </sl-card>
+
+  </div>
+
+</body>
+</html>
